@@ -1,79 +1,22 @@
-package programathon;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import javax.swing.*;
 
-public class Interfaz implements MouseListener {
-    JFrame vPrincipal;
-    JButton bNuevo,bGuardar,bAbrir,bReproducir,bSelecEscenario,bPersonaje,bSalir;
-    Interfaz(){
-        vPrincipal=new JFrame();
-        vPrincipal.setBounds(30,30,800,700);
-        vPrincipal.add(bNuevo);
-        bNuevo=new JButton();
-        bNuevo.setBounds(50,50,5,5);
-        bNuevo.setIcon(null);
-        vPrincipal.setVisible(true);
-    }
-    public static void main(String[] args){
-        Interfaz interfaz=new Interfaz();
-    }
-    
-    
-    
-    public void cargarConfiguracion(){
-       // Cargar cargar = new Cargar();
-        
-        
-        
-        
-        
-    }
-    public void guardarConfiguracion(){
-        
-        
-        
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //Eventos en los botones
+/**
+ *
+ * @author ricardo
+ */
+public class NewClass implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+          throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
           if(e.getSource()==bNuevo){
               System.out.println("Esta en el botonnuevo");
               
@@ -128,20 +71,5 @@ public class Interfaz implements MouseListener {
     public void mouseExited(MouseEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-        
-        
-        
-        
-    }
-
-
- 
     
-    
-    
-    
-    
-    
-    
-    
-    
+}
