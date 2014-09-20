@@ -1,6 +1,9 @@
 package programathon;
 
+import java.awt.Frame;
 import java.awt.Image;
+import java.awt.Menu;
+import java.awt.MenuBar;
 import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -12,11 +15,19 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
-public class Interfaz implements MouseListener {
+public class Interfaz extends Frame implements MouseListener {
+    MenuBar barra = new MenuBar();
+    Menu configuracion = new Menu("Configuración");
+    Menu CambiarColor = new Menu("Cambiar Color");
+    
     JFrame vPrincipal;
     JButton bNuevo,bGuardar,bAbrir,bReproducir,bSelecEscenario,bPersonaje,bSalir;
     ImageIcon iibNuevo,iibGuardar,iibAbrir,iibReproducir,iibSelecEscenario,iibPersonaje,iibSalir;
     Interfaz(){
+        setMenuBar(barra);
+        barra.add(configuracion);
+        configuracion.add(CambiarColor);
+        configuracion.addSeparator();
         creaBotones();
         vPrincipal=new JFrame();
         vPrincipal.setLayout(null);
