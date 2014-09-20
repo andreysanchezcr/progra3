@@ -46,8 +46,8 @@ public class Interfaz implements MouseListener {
         vPrincipal.add(bNuevo);
         vPrincipal.add(menu);
         
-        vPrincipal.add(jMenu2);
-        vPrincipal.add(jMenuBar);
+        //vPrincipal.add(jMenu2);
+        //vPrincipal.add(jMenuBar);
         cargarMenu();
         
         vPrincipal.setVisible(true);
@@ -176,17 +176,13 @@ menuBar.add(menu);
 
     public void cargarConfiguracion(){
        // Cargar cargar = new Cargar();
-        a= cargar.obtener();
-        color=a[0];
-        color=a[1];
-        color=a[2];
         
         
         
         
     }
     public void guardarConfiguracion(){
-        Cargar cargar = new Cargar();
+       
         
         
         
